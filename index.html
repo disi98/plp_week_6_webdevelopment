@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Coffee Shop</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+  <header class="site-header">
+  <h1 class="logo">Enigma Coffee Shop</h1>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span class="hamburger"></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero-section">
+      <h2>Unlock the Secrets of Exceptional Coffee</h2>
+      <button id="mystery-btn">Discover More</button>
+    </section>
+
+    <section class="slideshow" id="slideshow">
+      <button id="prev">&#10094;</button>
+      <img src="https://images.pexels.com/photos/4148373/pexels-photo-4148373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Coffee Image">
+      <button id="next">&#10095;</button>
+    </section>
+
+    <section class="tabs" id="tabs">
+      <button class="tab-btn active" data-tab="about">About</button>
+      <button class="tab-btn" data-tab="menu">Menu</button>
+      <div class="tab-content active" id="about">
+        <p>Welcome to Enigma Coffee Shop, where every cup tells a story.</p>
+      </div>
+      <div class="tab-content" id="menu">
+        <p>Explore our curated selection of espresso, lattes, and more.</p>
+      </div>
+    </section>
+
+    <section class="keypress-display">
+        <h2>Press any key to reveal its secret</h2>
+        <div id="key-reveal" class="key-reveal">_</div>
+      </section>
+      
+    <section class="accordion" id="accordion">
+      <div class="accordion-item">
+        <h3 class="accordion-header">Espresso</h3>
+        <div class="accordion-content">
+          <p>Rich and bold shots to kickstart your day.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">Latte</h3>
+        <div class="accordion-content">
+          <p>Smooth blends with creamy milk.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">Cappuccino</h3>
+        <div class="accordion-content">
+          <p>Balanced coffee with a touch of foam.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="contact-form" id="contact">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <label>Name: <input type="text" id="name" required><span class="error" id="name-error"></span></label>
+        <label>Email: <input type="email" id="email" required><span class="error" id="email-error"></span></label>
+        <label>Password: <input type="password" id="password" required minlength="8"><span class="error" id="password-error"></span></label>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="form-success" class="form-success"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enigma Coffee Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
